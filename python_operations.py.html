@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>python_operations.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #7a7e85;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #cf8e6d;}
+.s5 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+python_operations.py</font>
+</center></td></tr></table>
+<pre><span class="s0">#String Manipulation</span>
+
+<span class="s0">#Prompt the user to put their first and last name</span>
+<span class="s1">first_name </span><span class="s2">= </span><span class="s1">input</span><span class="s2">(</span><span class="s3">&quot;Enter your first name: &quot;</span><span class="s2">)</span>
+<span class="s1">last_name </span><span class="s2">= </span><span class="s1">input</span><span class="s2">(</span><span class="s3">&quot;Enter your last name: &quot;</span><span class="s2">)</span>
+
+<span class="s0">#concentate using strings to create full name</span>
+<span class="s1">greeting </span><span class="s2">= </span><span class="s3">&quot;Hello, &quot; </span><span class="s2">+ </span><span class="s1">first_name </span><span class="s2">+ </span><span class="s3">&quot; &quot; </span><span class="s2">+ </span><span class="s1">last_name </span><span class="s2">+ </span><span class="s3">&quot; Welcome to Python programming.&quot;</span>
+
+<span class="s0">#print greeting</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s1">greeting</span><span class="s2">)</span>
+
+
+<span class="s0">#Convert input from the strings to numbers float for arithmetic operation</span>
+<span class="s1">num1 </span><span class="s2">= </span><span class="s1">float</span><span class="s2">(</span><span class="s1">input</span><span class="s2">(</span><span class="s3">&quot;Enter the first number: &quot;</span><span class="s2">))</span>
+<span class="s1">num2 </span><span class="s2">= </span><span class="s1">float</span><span class="s2">(</span><span class="s1">input</span><span class="s2">(</span><span class="s3">&quot;Enter the second number: &quot;</span><span class="s2">))</span>
+
+<span class="s0">#Arithmetic Operations</span>
+
+<span class="s0">#Perform Arithmetic Operations</span>
+<span class="s1">addition </span><span class="s2">= </span><span class="s1">num1 </span><span class="s2">+ </span><span class="s1">num2</span>
+<span class="s1">subtraction </span><span class="s2">= </span><span class="s1">num1 </span><span class="s2">- </span><span class="s1">num2</span>
+<span class="s1">multiplication </span><span class="s2">= </span><span class="s1">num1 </span><span class="s2">* </span><span class="s1">num2</span>
+<span class="s1">integer_division </span><span class="s2">= </span><span class="s1">num1 </span><span class="s2">// </span><span class="s1">num2</span>
+<span class="s1">floating_point_division </span><span class="s2">= </span><span class="s1">num1 </span><span class="s2">/ </span><span class="s1">num2</span>
+
+
+<span class="s0">#Step 4: Display the results</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s3">f&quot;Addition: </span><span class="s4">{</span><span class="s1">num1</span><span class="s4">} </span><span class="s3">+ </span><span class="s4">{</span><span class="s1">num2</span><span class="s4">} </span><span class="s3">= </span><span class="s4">{</span><span class="s1">addition</span><span class="s4">}</span><span class="s3">&quot;</span><span class="s2">)</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s3">f&quot;Subtraction: </span><span class="s4">{</span><span class="s1">num1</span><span class="s4">} </span><span class="s3">- </span><span class="s4">{</span><span class="s1">num2</span><span class="s4">} </span><span class="s3">= </span><span class="s4">{</span><span class="s1">subtraction</span><span class="s4">}</span><span class="s3">&quot;</span><span class="s2">)</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s3">f&quot;Multiplication: </span><span class="s4">{</span><span class="s1">num1</span><span class="s4">} </span><span class="s3">* </span><span class="s4">{</span><span class="s1">num2</span><span class="s4">} </span><span class="s3">= </span><span class="s4">{</span><span class="s1">multiplication</span><span class="s4">}</span><span class="s3">&quot;</span><span class="s2">)</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s3">f&quot;Integer Division: </span><span class="s4">{</span><span class="s1">num1</span><span class="s4">} </span><span class="s3">// </span><span class="s4">{</span><span class="s1">num2</span><span class="s4">} </span><span class="s3">= </span><span class="s4">{</span><span class="s1">integer_division</span><span class="s4">}</span><span class="s3">&quot;</span><span class="s2">)</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s3">f&quot;Floating-point Division: </span><span class="s4">{</span><span class="s1">num1</span><span class="s4">} </span><span class="s3">/ </span><span class="s4">{</span><span class="s1">num2</span><span class="s4">} </span><span class="s3">= </span><span class="s4">{</span><span class="s1">floating_point_division</span><span class="s4">}</span><span class="s3">&quot;</span><span class="s2">)</span>
+
+
+<span class="s0">#Using the 'math' module</span>
+
+<span class="s0">#Step 1: Import the math module</span>
+<span class="s4">import </span><span class="s1">math</span>
+
+<span class="s0">#Step 2: Get user input and perform operations</span>
+<span class="s1">number </span><span class="s2">= </span><span class="s1">float</span><span class="s2">(</span><span class="s1">input</span><span class="s2">(</span><span class="s3">&quot;</span><span class="s4">\n</span><span class="s3">Enter a number to calculate its square root: &quot;</span><span class="s2">))</span>
+<span class="s1">square_root </span><span class="s2">= </span><span class="s1">math</span><span class="s2">.</span><span class="s1">sqrt</span><span class="s2">(</span><span class="s1">number</span><span class="s2">)</span>
+
+<span class="s1">base </span><span class="s2">= </span><span class="s1">float</span><span class="s2">(</span><span class="s1">input</span><span class="s2">(</span><span class="s3">&quot;Enter the base: &quot;</span><span class="s2">))</span>
+<span class="s1">exponent </span><span class="s2">= </span><span class="s1">float</span><span class="s2">(</span><span class="s1">input</span><span class="s2">(</span><span class="s3">&quot;Enter the exponent: &quot;</span><span class="s2">))</span>
+<span class="s1">power_result </span><span class="s2">= </span><span class="s1">math</span><span class="s2">.</span><span class="s1">pow</span><span class="s2">(</span><span class="s1">base</span><span class="s2">, </span><span class="s1">exponent</span><span class="s2">)</span>
+
+<span class="s1">pi_value </span><span class="s2">= </span><span class="s1">round</span><span class="s2">(</span><span class="s1">math</span><span class="s2">.</span><span class="s1">pi</span><span class="s2">, </span><span class="s5">5</span><span class="s2">)</span>
+
+<span class="s0">#Step 3: Display Results</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s3">f&quot;</span><span class="s4">\n</span><span class="s3">The square root of </span><span class="s4">{</span><span class="s1">number</span><span class="s4">} </span><span class="s3">is </span><span class="s4">{</span><span class="s1">square_root</span><span class="s4">}</span><span class="s3">&quot;</span><span class="s2">)</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s3">f&quot;</span><span class="s4">{</span><span class="s1">base</span><span class="s4">} </span><span class="s3">raised to the power of </span><span class="s4">{</span><span class="s1">exponent</span><span class="s4">} </span><span class="s3">is </span><span class="s4">{</span><span class="s1">power_result</span><span class="s4">}</span><span class="s3">&quot;</span><span class="s2">)</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s3">f&quot;The value of pi rounded to 5 decimal places is </span><span class="s4">{</span><span class="s1">pi_value</span><span class="s4">}</span><span class="s3">&quot;</span><span class="s2">)</span>
+
+
+<span class="s0">#Variable Reassignment and Type Conversion</span>
+
+<span class="s0">#Step 1: Assign an integer value to a variable</span>
+<span class="s1">num </span><span class="s2">= </span><span class="s5">10</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s3">f&quot;</span><span class="s4">\n</span><span class="s3">Original integer value: </span><span class="s4">{</span><span class="s1">num</span><span class="s4">} </span><span class="s3">(type: </span><span class="s4">{</span><span class="s1">type</span><span class="s2">(</span><span class="s1">num</span><span class="s2">)</span><span class="s4">}</span><span class="s3">)&quot;</span><span class="s2">)</span>
+
+<span class="s0">#Step 2: Reassign the same variable with a floating-point number</span>
+<span class="s1">num </span><span class="s2">= </span><span class="s5">10.5</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s3">f&quot;Reassigned floating-point value: </span><span class="s4">{</span><span class="s1">num</span><span class="s4">} </span><span class="s3">(type: </span><span class="s4">{</span><span class="s1">type</span><span class="s2">(</span><span class="s1">num</span><span class="s2">)</span><span class="s4">}</span><span class="s3">)&quot;</span><span class="s2">)</span>
+
+
+<span class="s0"># Step 3: Convert a string containing a number into an integer</span>
+<span class="s1">str_number </span><span class="s2">= </span><span class="s3">&quot;25&quot;</span>
+<span class="s1">converted_number </span><span class="s2">= </span><span class="s1">int</span><span class="s2">(</span><span class="s1">str_number</span><span class="s2">)</span>
+
+<span class="s0"># Step 4: Perform arithmetic with the converted number</span>
+<span class="s1">sum_result </span><span class="s2">= </span><span class="s1">converted_number </span><span class="s2">+ </span><span class="s5">5</span>
+
+<span class="s0">#Display Results</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s3">f&quot;Converted string to integer: </span><span class="s4">{</span><span class="s1">converted_number</span><span class="s4">} </span><span class="s3">(type: </span><span class="s4">{</span><span class="s1">type</span><span class="s2">(</span><span class="s1">converted_number</span><span class="s2">)</span><span class="s4">}</span><span class="s3">)&quot;</span><span class="s2">)</span>
+<span class="s1">print</span><span class="s2">(</span><span class="s3">f&quot;Sum of converted integer and 5: </span><span class="s4">{</span><span class="s1">sum_result</span><span class="s4">}</span><span class="s3">&quot;</span><span class="s2">)</span></pre>
+</body>
+</html>
